@@ -1,0 +1,212 @@
+@keyframes ease-out1 {
+  from {
+
+    margin-left: 45%;
+
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes ease-in {
+  from {
+
+    margin-right: 80%;
+
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+
+@keyframes color {
+
+  0% {
+    border-radius: 30px;
+    background-color:chocolate;
+  }
+
+  from {
+
+    margin-right: 80%;
+
+  }
+
+  to {
+    margin-right: 0%;
+  }
+
+
+}
+
+@keyframes animationli {
+  0% {
+    background-color: lightgreen;
+  }
+
+
+  100% {
+    background-color: lightcyan;
+  }
+
+  from {
+    margin-left: 0%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+.button3 {
+  transition-duration: 500ms;
+  font-weight: bolder;
+  border-radius: 9px;
+  padding: 5px 29px;
+
+  background-color:rgb(102, 0, 0);
+  margin-bottom: 5px;
+  color: white;
+  border: 2px solid white;
+}
+
+.button3:hover { 
+  padding-left: 30px;
+  box-shadow: 25px 0px 25px 0px rgb(255, 173, 136);
+  
+  background-color:rgb(102, 0, 0);
+  color: white;
+}
+
+
+
+/* CLASS DEFINATIONS */
+
+a {
+
+  color: white;
+  animation-delay: 0MS;
+  animation-name: animationli;
+  animation-duration: 0s;
+  font-size: 14px;
+  font-family: Comic Sans MS;
+}
+
+a:hover {
+  box-shadow: 20px 20px 200px violet;
+  color: red;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  animation-name: ease-out;
+  animation-duration: 500ms;
+  background-image: url(https://1.bp.blogspot.com/-zoov8MZ1dw8/YCduaGGsqyI/AAAAAAAAEp4/3jDLJlmCQ4ESJ_eGWMOJ743FtbVJhUxAwCLcBGAsYHQ/s16000/alfons-morales-YLSwjSy7stw-unsplash.jpg);  background-repeat:;
+   background-color:orange; color:WHITE; padding: 0px; text-align: center; border:black; border-width:1x; border-radius: 100PX; border-style:solid;
+}
+
+footer {
+  border-radius: 9px;
+  animation-name: ease-in;
+  animation-duration: 10s;
+}
+
+.footer1 {
+  border-radius: 9px;
+  border:black;
+  border-width:1px;
+  border-style:solid;
+  background-color:greenyellow;
+  color:black; 
+  text-align:center;
+  animation-name: ease-in;
+  animation-duration: 10s;
+}
+
+img {
+  /*
+  display: block; 
+  float: left; 150 225 - 60 90
+  display: block;*/
+  margin: 0px;
+ /* margin-left: 10%; 
+  margin-right: 90%; */
+  width: 150px;
+  height: 225px;
+  margin-bottom: 30px;
+  margin-right: 60px;
+  background:transparent;
+  transition: width 300ms, height 300ms;
+}
+
+img:hover {
+ display: block; 
+ /*
+ margin-left: 10%; 
+ margin-right: 90%;
+  float: right;
+*/
+  width: 170px;
+  height: 250px;
+}
+
+div
+{
+  margin: 2px;
+  animation-name: color; 
+  box-shadow: 10px 10px 50px black;
+
+   animation-duration: 2s; 
+  animation-delay:0s ;
+}
+
+.p3
+{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Times New Roman', Times, serif;
+  float: right;
+}
+
+p{
+  color: white; font-family: Comic Sans MS; margin-left:20px; margin-bottom: 20px; border-radius: 10px; background-color: transparent;  text-align: center; padding: 10px;
+
+}
+.h1
+{
+font-family: Blippo, fantasy;
+  
+}
+.here
+{
+  float: left;
+}
+
+
+.authorimg {
+
+  /*text-align: center;*/
+  box-shadow: gold;
+  float: right;
+  padding: 25px;
+  border-radius: 5ex;
+  animation-name: ease-out;
+  animation-duration: 2s;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+/*
+.bookimage
+{
+
+  box-shadow: 10px 10px 50px black;
+}
+*/
+
