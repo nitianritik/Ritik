@@ -7,6 +7,7 @@ int main()
 
 
 printf("here we are");
+printf("this a test file");
 
 
 
