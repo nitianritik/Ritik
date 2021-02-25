@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        // function showall1() {
+        //     for (var i = 1; i < 5; i++) {
+        //         var fni = document.getElementById("namei").value;
+        //         document.getElementById("subi").innerHTML = fni;
+        //     }
+
+        // }
+        function showall() {
+            ev.preventDefault();
+            var fn = document.getElementById("fname").value;
+            var ln = document.getElementById("lname").value;
+
+            if (fname.value != "" && (M.checked == false || F.checked == false) && lname.value != "") {
+
+                if (M.checked == true) {
+                    document.getElementById("sub0").innerHTML = "Mr.";
+
+                }
+                else {
+                    document.getElementById("sub0").innerHTML = "Ms.";
+
+
+
+                }
+
+
+                namef();
+                namem();
+                namel();
+                feedback();
+                document.getElementById("sub5").innerHTML = "Says ->";
+                document.getElementById("sub6").innerHTML = "__________________________";
+
+                // alert("Feedback Added Successfully!!! ");
+
+                // var text = ">>>>>";
+                // console.log(text);
+                // greeting = "nothing";
+            }
+            else {
+
+                alert("1. Enter the first Name \n2. Enter the last name \n3. Select Gender!!! ");
+
+
+            }
+
+
+        }
+        function namef() {
+            var fn = document.getElementById("fname").value;
+
+            document.getElementById("sub1").innerHTML = fn;
+        }
+
+        function namel() {
+            var ln = document.getElementById("lname").value;
+
+            document.getElementById("sub3").innerHTML = ln;
+
+        }
+        function namem() {
+            var mn = document.getElementById("mname").value;
+            document.getElementById("sub2").innerHTML = mn;
+
+        }
+
+        function feedback() {
+            var fd = document.getElementById("feed").value;
+            document.getElementById("sub4").innerHTML = fd;
+
+        }
+
+
+    </script>
+
+
+    <meta name="feedback form">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+
+        }
+
+        .add {
+            background-color: #45a049;
+
+        }
+
+        .add:hover {
+            background-color: green;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .section1 {
+            float: left;
+            width: 33%;
+
+        }
+
+        .section2 {
+
+            padding: 12px;
+            width: 67%;
+            display: inline;
+            float: right;
+
+        }
+
+        .radio {
+
+            padding: 12px;
+        }
+
+        footer {
+
+            margin: px;
+            display: block;
+            border: solid #ccc 1px;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section style=" display: inline-flexbox; border:solid #ccc 1px; height: 640px; border-radius: 10px; background-color: #f2f2f2;
+    " class="section1">
+        <h3 style="text-align: center;"> Feedback Form </h3>
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="name1">First Name</label>
+                <input type="text" id="fname" name="firstname1" placeholder="Enter First Your name here">
+
+                <label for="name2">Middle Name</label>
+                <input type="text" id="mname" name="lastname2" placeholder="Enter your Middle name here (optional) ">
+
+                <label for="name3">Last Name</label>
+                <input type="text" id="lname" name="lastname1" placeholder="Enter your last name here">
+                <!--  cut down the style given below -->
+                <section style=" font-size: 15px;" class="radio">
+
+                    <label class="containe">
+                        <input id="M" type="radio" name="radio">
+                        Male
+                    </label>
+                    <label class="containe">
+                        <input id="F" type="radio" name="radio">
+                        Female
+                    </label>
+                </section>
+
+
+                <label for="subject">Feedback</label>
+                <textarea id="feed" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+                <button class="add" style=" border:solid 2px ;  border-radius: 10px; padding:  5px 8px -2px 8px;"
+                onclick="showall()">
+                <p style=" font-weight: bolder; color: white; font-size: 25x;"> Add Your Feedback <br> +</p>
+
+            </button>
+            </form>
+            
+        </div>
+
+
+
+    </section>
+    <section style=" display: inline-flexbox; border:solid #ccc 1px; height: 640px; border-radius: 10px; background-color: #f2f2f2;
+    " class="section2 ">
+        <h3 style="text-align: center;"> Feedbacks
+            <hr>
+        </h3>
+
+        <div>
+            <p style="display: inline; " id="sub0"></p>
+
+            <p style="display: inline; " id="sub1"></p>
+            <p style="display: inline; " id="sub2"></p>
+            <p style="display: inline;" id="sub3"></p>
+            <u>
+                <p id="sub5"></p>
+            </u>
+
+            <p style=" margin-left: 70px; display: inline;" id="sub4"></p>
+            <p id="sub6"></p>
+
+
+
+
+        </div>
+
+    </section>
+
+</body>
+<footer>
+    <section style="margin: 10px;">
+        <h3 style="margin: 10px; text-align: center;"> Copyrighted © 202120130</h3>
+    </section>
+</footer>
+
+</html>
